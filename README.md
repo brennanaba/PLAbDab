@@ -6,13 +6,13 @@
 
 ---
     
-by Brennan Abanades\,$^{1,\dagger}$, Tobias H. Olsen\,$^{1,\dagger}$, Matthew I. J. Raybould\,$^{1}$, Broncio Aguilar-Sanjuan\,$^{1}$, Wing Ki Wong\,$^{2}$, Guy Georges\,$^{2}$, Alexander Bujotzek\,$^{2}$, and Charlotte M. Deane\,$^{1,*}$}
-    
-$^{1}$ Oxford Protein Informatics Group, Department of Statistics, University of Oxford, 24-29 St Giles', Oxford, OX1 3LB, United Kingdom
-$^{2}$ Large Molecule Research, Roche Pharma Research and Early Development, Roche Innovation Center Munich, DE-82377 Penzberg, Germany
-$^{\dagger}$ These authors share first authorship
-$^{*}$ To whom correspondence should be addressed}
-    
+by 
+Brennan Abanades $^{1,\dagger}$, Tobias H. Olsen $^{1,\dagger}$, Matthew I. J. Raybould $^{1}$ Broncio Aguilar-Sanjuan $^{1}$, Wing Ki Wong $^{2}$, Guy Georges $^{2}$, Alexander Bujotzek $^{2}$, and Charlotte M. Deane $^{1,*}$
+
+$^{1}$ Oxford Protein Informatics Group, Department of Statistics, University of Oxford, Oxford, United Kingdom  
+$^{2}$ Large Molecule Research, Roche Pharma Research and Early Development, Roche Innovation Center Munich, Penzberg, Germany  
+$^{\dagger}$ These authors contributed equally to this work and share first authorship  
+$^{*}$ To whom correspondence should be addressed  
 </div>
 
 
