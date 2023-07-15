@@ -23,3 +23,15 @@ Antibodies are key proteins of the adaptive immune system, and there exists a la
 Here, we present PLAbDab (the Patent and Literature Antibody Database), a self-updating repository containing over 150,000 paired antibody sequences  and 3D structural models, of which over 65,000 are unique. Each entry in the database also contains the title and authors of its literature source. Here we describe the methods used to extract, filter, pair, and model the antibodies in PLAbDab, and showcase how PLAbDab can be searched by sequence, structure, or keyword.
 
 PLAbDab uses include annotating query antibodies with potential antigen information from similar entries, analysing structural models of existing antibodies to identify modifications that could improve their properties, and compiling bespoke datasets of antibody sequences/structures known to bind to a specific antigen. PLAbDab is freely available via Github (https://github.com/brennanaba/PLAbDab) and as a searchable webserver (https://opig.stats.ox.ac.uk/webapps/plabdab/).
+
+## Usage
+
+To use the PLAbDab python package you must first download a copy of the database. This can be obtained from  <a href="https://opig.stats.ox.ac.uk/webapps/plabdab/static/downloads/plabdab_data.tar.gz">here.</a> The file will come in a compressed format. Once extraxcted, you can point your version of PLAbDab to it as follows:
+
+```python
+from PLAbDab import PLAbDab
+
+plabdab = PLAbDab(data_directory, n_jobs = 10)
+```
+
+This ''plabdab'' object can then be used to perform searches. PLAbDab will output a pandas dataframe for each search. For more info on how to use the API, please check the notebooks. 
