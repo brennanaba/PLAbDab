@@ -7,11 +7,6 @@ from ImmuneBuilder import ABodyBuilder2
 
 predictor = ABodyBuilder2()
 
-def fast_unrefined_antibody_model(seqs, filename = "temp_structure.pdb"):
-    ab = predictor.predict(seqs)
-    ab.save_single_unrefined(filename, index=ab.ranking.index(0))  # We don't refine for speed
-    return filename
-
 
 def predict_antibody(seqs):
     ab = predictor.predict(seqs)
