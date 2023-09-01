@@ -35,3 +35,29 @@ plabdab = PLAbDab(data_directory, n_jobs = 10)
 ```
 
 This ''plabdab'' object can then be used to perform searches. PLAbDab will output a pandas dataframe for each search. For more info on how to use the API, please check the notebooks. 
+
+## Install
+
+PLAbDab requires <a href="https://github.com/brennanaba/ImmuneBuilder">ImmuneBuilder</a> to do the structure search. To install it please follow the instructions on the <a href="https://github.com/brennanaba/ImmuneBuilder">ImmuneBuilder repo.</a>
+
+Once ImmuneBuilder and all its dependencies are installed, PLAbDab can be installed by running the following command in the PLAbDab directory:
+
+```bash
+$ pip install .
+```
+
+## Citing this work
+
+The code and data in this package is based on the <a href="https://www.biorxiv.org/content/10.1101/2023.07.15.549143v1">following paper.</a> If you use it, please cite:
+
+```tex
+@article{abanades2023patent,
+  title={The Patent and Literature Antibody Database (PLAbDab): an evolving reference set of functionally diverse, literature-annotated antibody sequences and structures},
+  author={Abanades, Brennan and Olsen, Tobias Hegelund and Raybould, Matthew IJ and Aguilar-Sanjuan, Broncio and Wong, Wing Ki and Georges, Guy and Bujotzek, Alexander and Deane, Charlotte M},
+  journal={bioRxiv},
+  pages={2023--07},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
+
