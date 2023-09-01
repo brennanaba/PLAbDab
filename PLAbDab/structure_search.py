@@ -14,7 +14,7 @@ class StructureSearch:
         
         
     
-    def structure_search(self, seqs, rmsd_cutoff = 10.0, url = False, save_query = False, filename = "temp_structure.pdb"):
+    def structure_search(self, seqs, rmsd_cutoff = 10.0, url = False):
         assert ("H" in seqs) and ("L" in seqs), f"{seqs} needs to be a dict of a heavy and light chain."
 
         # Get path to models
