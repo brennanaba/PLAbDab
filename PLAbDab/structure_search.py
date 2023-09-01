@@ -1,6 +1,5 @@
 import os 
 import pandas as pd
-from ImmuneBuilder import refine
 import PLAbDab.structure_search_utils as utils
 from PLAbDab.util import add_url_to_paired_data
 
@@ -22,14 +21,7 @@ class StructureSearch:
         model_db_path = os.path.join(self.path_to_db, 'models')
 
         # Model antibody
-        filename = utils.fast_unrefined_antibody_model(seqs, filename=filename)
-        antibody = utils.parse_antibody(filename)
-
-        # If the model of the query should be saved, refine it. Otherwise, delete it
-        if save_query:
-            refine.refine(filename, filename)
-        else:
-            os.remove(filename)
+        antibody = utils.predict_antibody(seqs)
 
         # Find CDR_lengths
         CDR_length = "_".join(utils.get_CDR_lengths(antibody))

@@ -13,6 +13,17 @@ def fast_unrefined_antibody_model(seqs, filename = "temp_structure.pdb"):
     return filename
 
 
+def predict_antibody(seqs):
+    ab = predictor.predict(seqs)
+
+    coords = ab.aligned_traces[ab.ranking.index(0)].cpu().numpy()
+    H_numb = [x[0][0] for x in ab.numbered_sequences["H"]]
+    L_numb = [x[0][0] + 128 for x in ab.numbered_sequences["L"]]
+    numbers = np.array(H_numb + L_numb, dtype = int)
+
+    return numbers, coords
+
+
 def get_antibody(text):
     lines = [x for x in text.split("\n") if x[13:15] == "CA"]
     size = len(lines)
